@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/combo.css">
+</head>
+
+<body>
+    <div id="sidebarmenu">
+        <a id="buttontohome" href="menu.html">Home</a>
+        <h1 id="ratehand">Rate my hand!</h1>
+        <h1 id="handplus">+ 1 card</h1>
+    </div>
+    <div id="field">
+        <div>
+            <div class="card placeholder" id="card-0"></div>
+            <div class="card" id="card-1"></div>
+            <div class="card placeholder" id="card-2"></div>
+            <div class="card" id="card-3"></div>
+            <div class="card placeholder" id="card-4"></div>
+            <div class="card" id="card-5"></div>
+            <div class="card" id="card-6"></div>
+            <div class="card" id="card-7"></div>
+            <div class="card" id="card-8"></div>
+            <div class="card" id="card-9"></div>
+            <div class="card" id="card-10"></div>
+            <div class="card" id="card-11"></div>
+            <div class="card" id="card-12"></div>
+            <div class="card" id="card-13"></div>
+            <div class="card" id="card-14"></div>
+        </div>
+    </div>
+
+    <div id="hand">
+        <div class="cardH" id="cardH-0"></div>
+        <div class="cardH" id="cardH-1"></div>
+        <div class="cardH" id="cardH-2"></div>
+        <div class="cardH" id="cardH-3"></div>
+        <div class="cardH" id="cardH-4"></div>
+        <div class="cardH" id="cardH-5"></div>
+        <div class="cardH" id="cardH-6"></div>
+    </div>
+
+    <div id="sidebarcard">
+        <img id="thumbnail" src="../card-background.png" alt="">
+        <h1 id="preview-card-name">Card name</h1>
+        <details>
+            <summary>Description</summary>
+            <h2 id="preview-card-description">
+                Hover over a card to get more info about it
+            </h2>
+        </details>
+    </div>
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+<script src="../js/main.js"></script>
+
+</html>

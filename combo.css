@@ -1,0 +1,131 @@
+
+@import url(font.css);
+
+body{
+    background-color: rgb(34, 29, 45);
+    color: rgb(255, 255, 255);
+    font-family: 'Nanum Gothic Coding';
+    text-align: center;
+    display: grid;
+    grid-template-columns: 11% 70% 19%;
+    height: 100vh;
+    
+}
+
+#field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#field div {
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content max-content;
+    grid-template-rows: max-content max-content max-content;
+    grid-gap: 10px;
+}
+
+#field div .placeholder{
+    opacity: 0;
+}
+
+.cardH, .card{
+    height: 128px;
+    width: 87.5px;
+    border-radius: 8px;
+    background-color: rgb(54, 46, 71);
+    border: 2px solid rgb(64, 54, 85);
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.card:hover {
+    position: relative;
+    margin-top: -2px;
+}
+
+#hand {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#hand .cardH, #field .card {
+    background-size: cover;
+    background-position: center;
+}
+
+#sidebarcard, #sidebarmenu {
+    background-color: rgb(20, 16, 26);
+    padding: 0px 20px;
+    grid-row: 1/3; 
+    /* REMINDER: change later */
+}
+
+#sidebarcard {
+    padding: 20px;
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: 10px;
+    text-align: left;
+}
+
+#sidebarcard img {
+    display: block;
+    height: 256px;
+    border: 4px solid rgb(81, 61, 100);
+    border-radius: 15px;
+    width: min-content;
+}
+
+#sidebarcard h1, #sidebarcard h2 {
+    display: block;
+    text-align: left;
+    color: white;
+}
+
+#sidebarcard summary {
+    color: white;
+    width: 100%;
+}
+
+#preview-card-description {
+    font-size: 14px;
+}
+
+#title{
+    
+    display: block;
+    position: relative;
+    padding-top: 10%;
+    font-size: 50px;
+    border-right: 2px;
+    
+}
+
+
+#buttontohome, #ratehand, #handplus{
+    display: block;
+    text-decoration: none;
+    color: rgb(207, 207, 207);
+    padding: 10px;
+    border-radius: 4px;
+    background-color: rgb(81, 61, 100);
+    position: relative;
+    margin-top: 10px;
+    font-size: 20px;
+    user-select: none;
+    
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
